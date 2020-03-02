@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PokerCard : Card
 {
+
+    public override string  ToString()
+    {
+
+        string returnVal = Value.ToString() + " of " + Suit;
+        return returnVal;
+    }
     // Start is called before the first frame update
 
     public string Suit { get; set; }

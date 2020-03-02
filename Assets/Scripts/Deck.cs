@@ -6,18 +6,18 @@ using UnityEngine;
 public class Deck 
 
 {
-    List<Card> cards = new List<Card>();
+   
     public int CardCount
     {
         get
         {
-            if (cards == null)
+            if (Cards == null)
             {
                 return 0;
             }
             else
             {
-                return cards.Count;
+                return Cards.Count;
             }
         }
     }
@@ -54,6 +54,7 @@ public class Deck
     
     public void Shuffle()
     {
+        List<Card> cards;
         cards = Cards.ToList();
         int n = cards.Count;
         while (n > 1)
@@ -76,7 +77,7 @@ public class Deck
     public void Merge(Deck anotherDeck)
     {
         
-        while(0 < anotherDeck.cards.Count)
+        while(0 < anotherDeck.Cards.Count)
         {
             AddToTop(anotherDeck.DrawFromTop());
             

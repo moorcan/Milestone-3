@@ -414,7 +414,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1287364503}
-        m_MethodName: ShuffleDeck
+        m_MethodName: Shuffle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

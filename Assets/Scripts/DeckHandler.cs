@@ -6,7 +6,7 @@ public class DeckHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Deck deck = new Deck();
+    public PokerDeck deck = new PokerDeck();
 
     public void DrawFromTop()
     {
@@ -22,8 +22,9 @@ public class DeckHandler : MonoBehaviour
 
     public void AddDeck()
     {
-        Deck anotherDeck = new Deck();
+        PokerDeck anotherDeck = new PokerDeck();
         deck.Merge(anotherDeck);
+        Debug.Log(deck.CardCount);
     }
 
     public void Shuffle()
